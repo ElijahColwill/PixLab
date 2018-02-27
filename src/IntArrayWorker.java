@@ -100,4 +100,17 @@ public class IntArrayWorker {
 		return count;
 	}
 
+	// method to return largest value in matrix
+	public int getLargest(){
+		int max = matrix[0][0];
+		for (int row = 0; row < matrix.length; row++) {
+			for (int col = 0; col < matrix[row].length; col++) {
+				if (matrix[row][col] > max) {
+					max = matrix[row][col];
+				}
+			}
+		}
+		return max;
+	}
+
 }

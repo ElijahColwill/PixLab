@@ -85,4 +85,19 @@ public class IntArrayWorker {
 		}
 	}
 
+	// method to return the count of 
+	// the number of times an integer is found in the matrix
+
+	public int getCount(int integer){
+		int count = 0;
+		for (int row = 0; row < matrix.length; row++) {
+			for (int col = 0; col < matrix[row].length; col++) {
+				if (matrix[row][col] == integer) {
+					count++;
+				}
+			}
+		}
+		return count;
+	}
+
 }

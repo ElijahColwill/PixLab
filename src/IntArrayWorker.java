@@ -113,4 +113,18 @@ public class IntArrayWorker {
 		return max;
 	}
 
+	// method to return largest in given column
+
+	public int getColTotal(int column){
+		int colTotal = 0;
+		for (int row = 0; row < matrix.length; row++) {
+			for (int col = 0; col < matrix[row].length; col++) {
+				if (col == column) {
+					colTotal += matrix[row][col];
+				}
+			}
+		}
+		return colTotal;
+	}
+
 }

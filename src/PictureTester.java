@@ -44,6 +44,13 @@ public class PictureTester
     temple.explore();
   }
   
+  public static void testNegate() {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.negate();
+    beach.explore();
+  }
+
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -71,17 +78,17 @@ public class PictureTester
     testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    //testNegate();
+    testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
-    testMirrorTemple();
-    //testMirrorArms();
-    //testMirrorGull();
-    //testMirrorDiagonal();
-    testCollage();
-    //testCopy();
-    testEdgeDetection();
+    // testMirrorVertical();
+    // testMirrorTemple();
+    // //testMirrorArms();
+    // //testMirrorGull();
+    // //testMirrorDiagonal();
+    // testCollage();
+    // //testCopy();
+    // testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();

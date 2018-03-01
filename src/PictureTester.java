@@ -51,6 +51,13 @@ public class PictureTester
     beach.explore();
   }
 
+  public static void testGrayscale() {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.grayscale();
+    beach.explore();
+  }
+
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -74,12 +81,12 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
-    //testKeepOnlyRed();
-    //testKeepOnlyGreen();
-    testNegate();
-    //testGrayscale();
+    // testZeroBlue();
+    // testKeepOnlyBlue();
+    // //testKeepOnlyRed();
+    // //testKeepOnlyGreen();
+    // testNegate();
+    testGrayscale();
     //testFixUnderwater();
     // testMirrorVertical();
     // testMirrorTemple();

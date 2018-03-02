@@ -146,6 +146,21 @@ public class Picture extends SimplePicture {
 		}
 	}
 
+	public void mirrorDiagonal() {
+		Pixel[][] pixels = this.getPixels2D();
+		Pixel leftPixel = null;
+		Pixel rightPixel = null;
+		int height = pixels.length;
+		for (int row = 0; row < pixels.length; row++) {
+			for (int col = 0; col < pixels.length; col++) {
+				leftPixel = pixels[row][col];
+				rightPixel = pixels[col][row];
+				leftPixel.setColor(rightPixel.getColor());
+			}
+		}
+	}
+
+
 	public void mirrorHorizontal() {
 		Pixel[][] pixels = this.getPixels2D();
 		Pixel leftPixel = null;

@@ -51,6 +51,17 @@ public class PictureTester
     caterpillar.explore();
   }
 
+
+  public static void testPicture()
+  {
+    Picture caterpillar = new Picture("beach.jpg");
+    Picture flower2 = new Picture("flower2.jpg");
+    caterpillar.explore();
+    caterpillar.copy2(flower2, 12, 12, 1, 1, 80, 80);
+    caterpillar.explore();
+  }
+
+
   public static void testMirrorHorizontalBotToTop()
   {
     Picture caterpillar = new Picture("caterpillar.jpg");
@@ -142,11 +153,11 @@ public class PictureTester
     //testFixUnderwater();
     // testMirrorVertical();
     //testMirrorDiagonal();
-    testMirrorGull();
+   // testMirrorGull();
     // //testMirrorArms();
     // //testMirrorGull();
     // //testMirrorDiagonal();
-    // testCollage();
+    testPicture();
     // //testCopy();
     // testEdgeDetection();
     //testEdgeDetection2();

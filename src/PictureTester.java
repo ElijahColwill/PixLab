@@ -87,6 +87,15 @@ public class PictureTester
     temple.explore();
   }
   
+  public static void testMirrorGull()
+  {
+    Picture temple = new Picture("seagull.jpg");
+    temple.explore();
+    temple.mirrorGull();
+    temple.explore();
+  }
+  
+
   public static void testNegate() {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
@@ -133,7 +142,7 @@ public class PictureTester
     //testFixUnderwater();
     // testMirrorVertical();
     //testMirrorDiagonal();
-    testMirrorArms();
+    testMirrorGull();
     // //testMirrorArms();
     // //testMirrorGull();
     // //testMirrorDiagonal();

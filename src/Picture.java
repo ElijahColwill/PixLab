@@ -323,6 +323,25 @@ public class Picture extends SimplePicture {
 		this.write("collage.jpg");
 	}
 
+	public void myCollage() {
+		Picture beach = new Picture("caterpillar.jpg");
+		Picture koala = new Picture("robot.jpg");
+		Picture water = new Picture("swan.jpg");
+		this.copy(beach, 0, 0);
+		this.copy(koala, 150, 100);
+		this.copy(water, 6, 200);
+		Picture beachNoBlue = new Picture(beach);
+		beachNoBlue.mirrorDiagonal();
+		Picture koalaMirrorH = new Picture(koala);
+		koalaMirrorH.mirrorHorizontal();
+		Picture waterNoColor = new Picture(water);
+		waterNoColor.negate();
+		this.copy(beachNoBlue, 300, 0);
+		this.copy(koalaMirrorH, 400, 0);
+		this.copy(waterNoColor, 0, 0);
+		this.write("collage.jpg");
+	}
+
 	/**
 	 * Method to show large changes in color
 	 * 
